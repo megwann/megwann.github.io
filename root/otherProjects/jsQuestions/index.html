@@ -1,0 +1,112 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>jsQuestions</title>
+</head>
+
+<body>
+
+    <h1> Programming Questions </h1>
+
+    <p>1. Correct the mistakes. (Hint: Use JSBin, then when finished run through JSBeautifier && JS Lint) </p>
+
+    <pre>
+
+var userAge = prompt("Please enter your age");{
+if (userAge <= 4){
+alert("So you're a baby!");
+} else if ( userAge < 0 || userAge > 200){
+alert("I think you may be lying about your age");
+} else {
+alert("That's a good age");
+}
+
+</pre>
+
+    <p> 2. Using document.write(), write code that displays the results of the 12 times table. Its output should be the results of the calculations. (Note: There several levels of efficiency in solving this).
+    </p>
+
+
+
+    <pre>
+
+var timesTable = 12;
+var timesBy;
+    for (timesBy = 1; timesBy < 13; timesBy++)
+{
+   document.write(timesTable + " * " + timesBy + " = " + timesBy * timesTable +
+      "<br>");
+}
+
+    </pre>
+
+
+    <p>3. Change the code of Question 2 so that it's a function that takes as parameters the times table required and the values at which it should start and end. For example, you might try the four times table displayed starting with 4 * 4 and ending at 4 * 9. </p>
+
+    <pre>
+
+function writeTimesTable(timesTable, timesByStart, timesByEnd)
+{
+   for (;timesByStart <= timesByEnd; timesByStart++)
+{
+    document.write(timesTable + " * " + timesByStart + " = " +
+    timesByStart * timesTable + "<br>");
+}
+}
+
+writeTimesTable(4,4,9);
+
+</pre>
+
+    <p>4. Modify the code of Question 3 to request the times table to be displayed from the user; the code should continue to request and display times tables until the user enters – </p>
+
+    <pre>
+
+function writeTimesTable(timesTable, timesByStart, timesByEnd)
+{
+   for (;timesByStart <= timesByEnd; timesByStart++)
+
+   {
+      document.write(timesTable + " * " + timesByStart + " = " +
+         timesByStart * timesTable + "<br>");
+   }
+}
+
+var timesTable;
+
+while ( (timesTable = prompt("Enter the times table",-1)) != -1)
+{
+   while (isNaN(timesTable) == true)
+   {
+    timesTable = prompt(timesTable + " is not a valid number, please retry",-1);
+
+   }
+
+   if (timesTable == -1)
+   {
+      break;
+   }
+
+   document.write("<br>The " + timesTable + " times table<br>");
+   writeTimesTable(timesTable,1,12);
+
+}
+
+</pre>
+
+
+
+
+
+    <p>1. Additionally, do a check to make sure that the user is entering a valid number; if the number is not valid, ask the user to re-enter it.
+    </p>
+
+    <pre>
+
+    </pre>
+
+</body>
+
+</html>
