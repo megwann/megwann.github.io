@@ -1,28 +1,361 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8">
-<title>Bootstrap 3 Responsive Template</title>
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+	<meta charset="UTF-8">
+	<title>Bootstrap 3 Responsive Template</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 </head>
+
 <body>
+	<div class="container">
+		<!-- Nav tabs -->
+		<ul class="nav nav-tabs" role="tablist">
+			<li role="presentation" class="active"><a href="#q1" aria-controls="home" role="tab" data-toggle="tab">Q1</a>
+			</li>
+			<li role="presentation"><a href="#q2" aria-controls="profile" role="tab" data-toggle="tab">Q2</a>
+			</li>
+			<li role="presentation"><a href="#q3" aria-controls="messages" role="tab" data-toggle="tab">Q3</a>
+			</li>
+			<li role="presentation"><a href="#q4" aria-controls="settings" role="tab" data-toggle="tab">Q4</a>
+			</li>
+			<li role="presentation"><a href="#q5" aria-controls="settings" role="tab" data-toggle="tab">Q5</a>
+			</li>
+			<li role="presentation"><a href="#q6" aria-controls="settings" role="tab" data-toggle="tab">Q6</a>
+			</li>
+			<li role="presentation"><a href="#q7" aria-controls="settings" role="tab" data-toggle="tab">Q7</a>
+			</li>
+			<li role="presentation"><a href="#q8" aria-controls="settings" role="tab" data-toggle="tab">Q8</a>
+			</li>
+			<li role="presentation"><a href="#q9" aria-controls="settings" role="tab" data-toggle="tab">Q9</a>
+			</li>
+		</ul>
+		<!-- Tab panes -->
+		<div class="tab-content">
+			<div role="tabpanel" class="tab-pane active" id="q1">
+				<div class="row">
+					<div class="col-md-12">
+						<pre>
 
-<div class="container">
-    <div class="row">
-        <div class="col-md-12">
-Lorem Ipsum
-        </div>
-    </div>
-</div>
+function getTriangle() {
+        var str = "";
+        // the string goes here
+        for (var i = 1; i <= 6; i++) {
+            //write i stars + <br/>
+            for (var j = 1; j <= i; j++) {
+                str = str + "#"
+            }
+            str = str + < /br>
+        }
+        $("#q1result").html(str);
+    }
 
- <script>
-        $(document).ready(function() {
+    $("#q1Button").on("click", function() {
+        getTriangle();
+    });
+                        </pre>
+					</div>
+					<div class="col-md-12">
+						<!-- Button Div -->
+						<button id="q1Button" class="btn btn-default" type="submit">Button</button>
+					</div>
+					<div class="col-md-12">
+						<!-- Results Div -->
+						<div id="q1result"></div>
+					</div>
+				</div>
+			</div>
+			<div role="tabpanel" class="tab-pane" id="q2">
+				<div class="row">
+					<div class="col-md-12">
+						<pre>
+						
+function printFooBar() {
+    var print = "";
+    var number = Number(1);
+    for (i = Number(1); i <= 100; i++) {
 
-        });
-    </script>      
-    
+        if (i % 3 == 0 && i % 5 == 0) {
+            print = print + "FooBar" + "<br/>";
+        } else if (i % 3 == 0) {
+            print = print + "Foo" + "<br/>";
+        } else if (i % 5 == 0) {
+            print = print + "Bar " + "<br/>";
+        } else {
+            print = print + i + "<br/>";
+        }
+
+    }
+    $("#q2result").html(print);
+}
+
+$("#q2button").on("click", function() {
+    printFooBar();
+
+});
+					 </pre>
+					</div>
+					<div class="col-md-12">
+						<!-- Button Div -->
+						<button id="q2Button" class="btn btn-default" type="submit">Button</button>
+					</div>
+					<div class="col-md-12">
+						<!-- Results Div -->
+						<div id="q2result">
+						</div>
+					</div>
+				</div>
+			</div>
+			<div role="tabpanel" class="tab-pane" id="q3">
+				<div class="row">
+					<div class="col-md-12">
+						<pre>
+					
+						
+function chessBoard() {
+    var size = prompt("Please enter a Number");
+    var line = '';
+    var print = "";
+    var i = 0;
+
+    for (i = 0; i < size / 2; i++) {
+        line = print + line + '# ';
+    }
+
+    for (i = 0; i < size; i++) {
+        if (i % 2 === 0) {
+            print = print + (' ' + line) + "<br/>";
+        } else {
+            print = print + (line) + "<br/>";
+        }
+    }
+    $("#q3result").html(print);
+}
+
+
+$("#q3button").on("click", function() {
+
+    chessBoard();
+});
+
+                </pre>
+					</div>
+					<div class="col-md-12">
+						<!-- Button Div -->
+						<button id="q3Button" class="btn btn-default" type="submit">Button</button>
+					</div>
+					<div class="col-md-12">
+						<!-- Results Div -->
+						<div id="q3result"></div>
+					</div>
+				</div>
+			</div>
+			<div role="tabpanel" class="tab-pane" id="q4">
+				<div class="row">
+					<div class="col-md-12">
+						<pre>
+
+function countBs(bString) {
+    var count = 0;
+    for (var i = 0; i < bString.length; i++) {
+        if (bString.charAt(i) == 'B') {
+            count = (count + 1);
+        }
+    }
+    return count;
+}
+
+
+$("#q4button").on("click", function() {
+
+    var userInput = prompt("");
+    var x = countBs(userInput);
+
+    $("#q4result").html(x);
+});
+
+				  
+                </pre>
+
+					</div>
+					<div class="col-md-12">
+						<!-- Button Div -->
+						<button id="q4Button" class="btn btn-default" type="submit">Button</button>
+					</div>
+					<div class="col-md-12">
+						<!-- Results Div -->
+						<div id="q4result"></div>
+					</div>
+				</div>
+			</div>
+			<div role="tabpanel" class="tab-pane" id="q5">
+				<div class="row">
+					<div class="col-md-12">
+						<pre>
+    function countChar(cString, charMatch) {
+	    var count = 0;
+	    for (var i = 0; i < cString.length; i++) {
+	        if (cString.charAt(i) == charMatch) {
+	            count = (count + 1);
+	        }
+	    }
+	    return count;
+	}
+	$("#q5button").on("click", function() {
+
+	    var inputOne = prompt("");
+	    var inputTwo = prompt("")
+
+	    var t = countChar(inputOne, inputTwo)
+	    $("#q5result").html(t);
+	});
+
+                </pre>
+					</div>
+					<div class="col-md-12">
+						<!-- Button Div -->
+						<button id="q5Button" class="btn btn-default" type="submit">Button</button>
+					</div>
+					<div class="col-md-12">
+						<!-- Results Div -->
+						<div id="q5result"></div>
+					</div>
+				</div>
+			</div>
+			<div role="tabpanel" class="tab-pane" id="q6">
+				<div class="row">
+					<div class="col-md-12">
+						<pre>
+                    PAGE 6
+                </pre>
+					</div>
+					<div class="col-md-12">
+						<!-- Button Div -->
+						<button id="q6Button" class="btn btn-default" type="submit">Button</button>
+					</div>
+					<div class="col-md-12">
+						<!-- Results Div -->
+						<div id="q6result"></div>
+					</div>
+				</div>
+			</div>
+			<div role="tabpanel" class="tab-pane" id="q7">
+				<div class="row">
+					<div class="col-md-12">
+						<pre>
+                    PAGE 7
+                </pre>
+					</div>
+					<div class="col-md-12">
+						<!-- Button Div -->
+						<button id="q7Button" class="btn btn-default" type="submit">Button</button>
+					</div>
+					<div class="col-md-12">
+						<!-- Results Div -->
+						<div id="q7result"></div>
+					</div>
+				</div>
+			</div>
+			<div role="tabpanel" class="tab-pane" id="q8">
+				<div class="row">
+					<div class="col-md-12">
+						<pre>
+                    PAGE 8 
+                </pre>
+					</div>
+					<div class="col-md-12">
+						<!-- Button Div -->
+						<button id="q8Button" class="btn btn-default" type="submit">Button</button>
+					</div>
+					<div class="col-md-12">
+						<!-- Results Div -->
+						<div id="q8result"></div>
+					</div>
+				</div>
+			</div>
+			<div role="tabpanel" class="tab-pane" id="q9">
+				<div class="row">
+					<div class="col-md-12">
+						<pre>
+                   PAGE 9
+                </pre>
+					</div>
+					<div class="col-md-12">
+						<!-- Button Div -->
+						<button id="q9Button" class="btn btn-default" type="submit">Button</button>
+					</div>
+					<div class="col-md-12">
+						<!-- Results Div -->
+						<div id="q9result"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script>
+		$(document).ready(function () {
+			// code in the general function to allow question one to run
+			//this function prints a triangle of hashtags
+			function getTriangle() {
+				var str = "";
+				// the string goes here
+				for (var i = 1; i <= 6; i++) {
+					//write i stars + <br/>
+					for (var j = 1; j <= i; j++) {
+						str = str + "#"
+					}
+					str = str + "</br>"
+				}
+				$("#q1result").html(str);
+			}
+			$("#q1Button").on("click", function () {
+				getTriangle();
+			});
+			function printFooBar() {
+				var print = "";
+				var number = Number(1);
+				for (i = Number(1); i <= 100; i++) {
+					if (i % 3 == 0 && i % 5 == 0) {
+						print = print + "FooBar" + "<br/>";
+					} else if (i % 3 == 0) {
+						print = print + "Foo" + "<br/>";
+					} else if (i % 5 == 0) {
+						print = print + "Bar " + "<br/>";
+					} else {
+						print = print + i + "<br/>";
+					}
+				}
+				$("#q2result").html(print);
+			}
+			$("#q2button").on("click", function () {
+				printFooBar();
+			});
+			$("#q3Button").on("click", function () {
+				$("#q3result").html("ANSWER");
+			});
+			$("#q4Button").on("click", function () {
+				$("#q4result").html("ANSWER");
+			});
+			$("#q5Button").on("click", function () {
+				$("#q5result").html("ANSWER");
+			});
+			$("#q6Button").on("click", function () {
+				$("#q6result").html("ANSWER");
+			});
+			$("#q7Button").on("click", function () {
+				$("#q7result").html("ANSWER");
+			});
+			$("#q8Button").on("click", function () {
+				$("#q8result").html("ANSWER");
+			});
+			$("#q9Button").on("click", function () {
+				$("#q9result").html("ANSWER");
+			});
+		});
+	</script>
 </body>
+
 </html>
