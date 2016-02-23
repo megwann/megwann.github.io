@@ -12,52 +12,52 @@
 
 <body>
 
-    <nav class="navbar navbar-inverse">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <a class="navbar-brand" href="http://megwann.github.io//index.html">Megan Storey</a>
-    </div>
-    <ul class="nav navbar-nav">
-      <li class="#"><a href="http://megwann.github.io//index.html">Home</a></li>
+	<nav class="navbar navbar-inverse">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<a class="navbar-brand" href="http://megwann.github.io//index.html">Megan Storey</a>
+			</div>
+			<ul class="nav navbar-nav">
+				<li class="#"><a href="http://megwann.github.io//index.html">Home</a></li>
 
-       <li><a href="http://megwann.github.io/otherProjects/codeAcademy/index.html">Code Academy</a></li>
+				<li><a href="http://megwann.github.io/otherProjects/codeAcademy/index.html">Code Academy</a></li>
 
 
 
-            <li class="dropdown active">
-        <a class="dropdown-toggle" data-toggle="dropdown" href="#">JS Questions
+				<li class="dropdown active">
+					<a class="dropdown-toggle" data-toggle="dropdown" href="#">JS Questions
         <span class="caret"></span></a>
-        <ul class="dropdown-menu">
+					<ul class="dropdown-menu">
 
-            <li><a href="http://megwann.github.io/otherProjects/jsQuestions/index.html"> Week 3 Programming Questions</a></li>
+						<li><a href="http://megwann.github.io/otherProjects/jsQuestions/index.html"> Week 3 Programming Questions</a></li>
 
-             <li><a href="http://megwann.github.io/otherProjects/jsQuestions/week5Questions.html"> Week 5 Questions </a></li>
+						<li><a href="http://megwann.github.io/otherProjects/jsQuestions/week5Questions.html"> Week 5 Questions </a></li>
 
-        </ul>
-
-
-        </li>
+					</ul>
 
 
-        <li class="dropdown">
-        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Twitter Bootstrap
+				</li>
+
+
+				<li class="dropdown">
+					<a class="dropdown-toggle" data-toggle="dropdown" href="#">Twitter Bootstrap
         <span class="caret"></span></a>
-        <ul class="dropdown-menu">
-            <li><a href="http://megwann.github.io/otherProjects/twitterBootstrap/index.html">Twitter Bootstrap</a></li>
+					<ul class="dropdown-menu">
+						<li><a href="http://megwann.github.io/otherProjects/twitterBootstrap/index.html">Twitter Bootstrap</a></li>
 
-          <li><a href="http://megwann.github.io/otherProjects/twitterBootstrap/carousel.html">Carousel</a></li>
-
-
+						<li><a href="http://megwann.github.io/otherProjects/twitterBootstrap/carousel.html">Carousel</a></li>
 
 
-        </ul>
 
 
-        </li>
+					</ul>
 
-    </ul>
-  </div>
-</nav>
+
+				</li>
+
+			</ul>
+		</div>
+	</nav>
 
 
 	<div class="container">
@@ -82,6 +82,8 @@
 			<li role="presentation"><a href="#q9" aria-controls="settings" role="tab" data-toggle="tab">Q9</a>
 			</li>
 		</ul>
+
+
 		<!-- Tab panes -->
 		<div class="tab-content">
 			<div role="tabpanel" class="tab-pane active" id="q1">
@@ -218,7 +220,7 @@ function countBs(bString) {
 }
 
 
-$("#q4button").on("click", function() {
+$("#q4Button").on("click", function() {
 
     var userInput = prompt("");
     var x = countBs(userInput);
@@ -345,9 +347,13 @@ $("#q4button").on("click", function() {
 		</div>
 	</div>
 	<script>
-		$(document).ready(function () {
+		$(document).ready(function() {
 			// code in the general function to allow question one to run
 			//this function prints a triangle of hashtags
+
+
+			// ++++++++++++++++++++++++ Q1 +++++++++++++++++++++
+
 			function getTriangle() {
 				var str = "";
 				// the string goes here
@@ -360,9 +366,15 @@ $("#q4button").on("click", function() {
 				}
 				$("#q1result").html(str);
 			}
-			$("#q1Button").on("click", function () {
+			$("#q1Button").on("click", function() {
 				getTriangle();
 			});
+
+
+
+			// ++++++++++++++++++++++++ Q2 +++++++++++++++++++++
+
+
 			function printFooBar() {
 				var print = "";
 				var number = Number(1);
@@ -377,30 +389,124 @@ $("#q4button").on("click", function() {
 						print = print + i + "<br/>";
 					}
 				}
+
+
 				$("#q2result").html(print);
 			}
-			$("#q2button").on("click", function () {
+			$("#q2Button").on("click", function() {
 				printFooBar();
 			});
-			$("#q3Button").on("click", function () {
-				$("#q3result").html("ANSWER");
+
+
+			// ++++++++++++++++++++++++ Q3 +++++++++++++++++++++
+
+			function countBs(bString) {
+				var count = 0;
+				for (var i = 0; i < bString.length; i++) {
+					if (bString.charAt(i) == 'B') {
+						count = (count + 1);
+					}
+				}
+				return count;
+			}
+
+
+			$("#q3Button").on("click", function() {
+
+				var userInput = prompt("");
+				var x = countBs(userInput);
+
+				$("#q3result").html(x);
 			});
-			$("#q4Button").on("click", function () {
-				$("#q4result").html("ANSWER");
+
+
+
+
+			//$("#q3Button").on("click", function () {
+			//	$("#q3result").html("ANSWER");
+			//});
+
+
+
+
+
+
+			// ++++++++++++++++++++++++ Q4 +++++++++++++++++++++
+
+
+			function countBs(bString) {
+				var count = 0;
+				for (var i = 0; i < bString.length; i++) {
+					if (bString.charAt(i) == 'B') {
+						count = (count + 1);
+					}
+				}
+				return count;
+			}
+
+
+			$("#q4Button").on("click", function() {
+
+				var userInput = prompt("");
+				var x = countBs(userInput);
+
+				$("#q4result").html(x);
 			});
-			$("#q5Button").on("click", function () {
-				$("#q5result").html("ANSWER");
+
+			$("#q4Button").on("click", function() {
+				$("#q4result").html("");
 			});
-			$("#q6Button").on("click", function () {
+
+
+			// ++++++++++++++++++++++++ Q5 +++++++++++++++++++++
+
+
+			function countChar(cString, charMatch) {
+				var count = 0;
+				for (var i = 0; i < cString.length; i++) {
+					if (cString.charAt(i) == charMatch) {
+						count = (count + 1);
+					}
+				}
+				return count;
+			}
+			$("#q5Button").on("click", function() {
+
+				var inputOne = prompt("");
+				var inputTwo = prompt("")
+
+				var t = countChar(inputOne, inputTwo)
+				$("#q5result").html(t);
+			});
+
+
+
+
+
+
+			$("#q5Button").on("click", function() {
+				$("#q5result").html("");
+			});
+
+
+			// ++++++++++++++++++++++++ Q6 +++++++++++++++++++++
+			$("#q6Button").on("click", function() {
 				$("#q6result").html("ANSWER");
 			});
-			$("#q7Button").on("click", function () {
+
+
+
+			$("#q7Button").on("click", function() {
 				$("#q7result").html("ANSWER");
 			});
-			$("#q8Button").on("click", function () {
+
+
+			$("#q8Button").on("click", function() {
 				$("#q8result").html("ANSWER");
 			});
-			$("#q9Button").on("click", function () {
+
+
+			$("#q9Button").on("click", function() {
 				$("#q9result").html("ANSWER");
 			});
 		});
