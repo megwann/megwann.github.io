@@ -401,31 +401,31 @@ $("#q4Button").on("click", function() {
 			// ++++++++++++++++++++++++ Q3 +++++++++++++++++++++
 
 
-function chessBoard() {
-    var size = prompt("Please enter a Number");
-    var line = '';
-    var print = "";
-    var i = 0;
+			function chessBoard() {
+				var size = prompt("Please enter a Number");
+				var line = '';
+				var print = "";
+				var i = 0;
 
-    for (i = 0; i < size / 2; i++) {
-        line = print + line + '# ';
-    }
+				for (i = 0; i < size / 2; i++) {
+					line = print + line + '# ';
+				}
 
-    for (i = 0; i < size; i++) {
-        if (i % 2 === 0) {
-            print = print + (' ' + line) + "<br/>";
-        } else {
-            print = print + (line) + "<br/>";
-        }
-    }
-    $("#q3result").html(print);
-}
+				for (i = 0; i < size; i++) {
+					if (i % 2 === 0) {
+						print = print + (' ' + line) + "<br/>";
+					} else {
+						print = print + (line) + "<br/>";
+					}
+				}
+				$("#q3result").html(print);
+			}
 
 
-$("#q3Button").on("click", function() {
+			$("#q3Button").on("click", function() {
 
-    chessBoard();
-});
+				chessBoard();
+			});
 
 
 
