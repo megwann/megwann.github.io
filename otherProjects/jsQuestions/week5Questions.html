@@ -276,11 +276,37 @@ $("#q4Button").on("click", function() {
 					</div>
 				</div>
 			</div>
+
+
+
+
+
 			<div role="tabpanel" class="tab-pane" id="q6">
 				<div class="row">
 					<div class="col-md-12">
 						<pre>
-                    PAGE 6
+
+            function range(start, end){
+
+            var arr =[];
+            arr.push(1);
+            arr.push(5);
+
+
+            return arr;
+            }
+
+            $("#q6Button").on("click",function(){
+
+            //alert("6");
+            //range(3,5);
+
+            var rangeAnswer = range();
+
+
+            $("#q6result").html("Answer is: "+rangeAnswer.join());
+
+        });
                 </pre>
 					</div>
 					<div class="col-md-12">
@@ -293,6 +319,13 @@ $("#q4Button").on("click", function() {
 					</div>
 				</div>
 			</div>
+
+
+
+
+
+
+
 			<div role="tabpanel" class="tab-pane" id="q7">
 				<div class="row">
 					<div class="col-md-12">
@@ -481,9 +514,44 @@ $("#q4Button").on("click", function() {
 
 
 			// ++++++++++++++++++++++++ Q6 +++++++++++++++++++++
+
+
+
+			function range(start, end) {
+
+				var arr = [];
+				//arr.push(1);
+				//arr.push(5);
+
+				if (start <= end) {
+					for (start; start <= end; start++) {
+
+						arr.push(start);
+
+					}
+				}
+				return arr;
+
+			}
+
+
+			//else{resturn}
+
 			$("#q6Button").on("click", function() {
-				$("#q6result").html("ANSWER");
+
+				//alert("6");
+				//range(3,5);
+
+				var rangeAnswer = range(1, 6);
+
+
+				$("#q6result").html("Answer is: " + rangeAnswer.join());
+
 			});
+
+
+			// ++++++++++++++++++++++++ Q7 +++++++++++++++++++++
+
 
 
 
@@ -492,10 +560,14 @@ $("#q4Button").on("click", function() {
 			});
 
 
+			// ++++++++++++++++++++++++ Q8 +++++++++++++++++++++
+
 			$("#q8Button").on("click", function() {
 				$("#q8result").html("ANSWER");
 			});
 
+
+			// ++++++++++++++++++++++++ Q9 +++++++++++++++++++++
 
 			$("#q9Button").on("click", function() {
 				$("#q9result").html("ANSWER");
