@@ -1,3 +1,20 @@
+body {
+background-color: #B19CD9;
+}
+
+h1 {
+
+color: white;  
+    text-align: center;
+    font-size: 24pt;
+}
+
+h2{
+    color: white;  
+    text-align: center;
+    font-size: 16pt;
+}
+
 .row {
   margin-top: 5px;
 }
@@ -15,6 +32,7 @@
   vertical-align: middle;
   line-height: 100px;
   padding-bottom: 10px;
+    color: pink;
 }
 .x {
   font-size: 100px;
@@ -22,20 +40,21 @@
   vertical-align: middle;
   line-height: 100px;
   padding-bottom: 10px;
+    color: lightblue;
 }
 .green {
-  color: green;
+  color: lightgreen;
 }
 .allBorders {
-  border: 1px black solid;
+  border: 3px white solid;
 }
 .borderBottom {
-  border-bottom: 1px black solid;
+  border-bottom: 3px white solid;
 }
 .borderTop {
-  border-top: 1px black solid;
+  border-top: 3px white solid;
 }
 .borderLeftAndRight {
-  border-left: 1px black solid;
-  border-right: 1px black solid;
+  border-left: 3px white solid;
+  border-right: 3px white solid;
 }
