@@ -200,7 +200,16 @@ font-family:'claire_handlight';
     
 }
 
+.pdf{
 
+font-family:'claire_handlight';
+    font-size: 40px; 
+    color: #939598;
+    padding: 10px;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+}
 
 
 li.friend{
