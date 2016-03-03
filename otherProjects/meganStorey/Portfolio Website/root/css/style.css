@@ -57,6 +57,10 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 
 }
 
+
+
+@import url(https://fonts.googleapis.com/css?family=Josefin+Sans:400,300italic,600,700,300,400italic);
+
 /*FONTS DONE*/
 
 
@@ -188,6 +192,44 @@ p{
 
 }
 
+.friends{
+
+font-family:'claire_handlight';
+    font-size: 24px; 
+    color: #939598;
+    
+}
+
+
+
+
+li.friend{
+
+display: block;}
+
+.friend{
+font-family:'claire_handlight';
+    font-size: 24px; 
+    color: #939598;
+    list-style-type: circle;
+    padding: 10px;
+    
+}
+
+
+.links{
+font-family: 'Josefin Sans', sans-serif;
+    font-weight: 500;
+}
+
+
+.about {
+padding: 10px;
+font-family: 'Josefin Sans', sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+}
+
 /*Styling the body text on the About Me Page*/
 #aboutme{
     float: right;
@@ -198,9 +240,8 @@ p{
 
 /*Styling the three Social Media Links on the About Page */
 
-.icon-instagram,
-.icon-facebook,
-.icon-mail{
+.icon-email,
+.icon-linkedin-alt{
     
     font-size: 50px;
     padding: 10px;
@@ -220,7 +261,62 @@ a span{
 
 display: none;}
 
+
 @font-face {
+  font-family: "icons";
+  src:url("fonts/icons.eot");
+  src:url("fonts/icons.eot?#iefix") format("embedded-opentype"),
+    url("fonts/icons.woff") format("woff"),
+    url("fonts/icons.ttf") format("truetype"),
+    url("fonts/icons.svg#icons") format("svg");
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+[data-icon]:before {
+  font-family: "icons" !important;
+  content: attr(data-icon);
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+[class^="icon-"]:before,
+[class*=" icon-"]:before {
+  font-family: "icons" !important;
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-iphone:before {
+  content: "\69";
+}
+.icon-email:before {
+  content: "\6d";
+}
+.icon-linkedin-alt:before {
+  content: "\6c";
+}
+.icon-android-attach:before {
+  content: "\65";
+}
+
+
+/*
+
+ @font-face {
   font-family: "icons";
   src:url("../fonts/icons.eot");
   src:url("../fonts/icons.eot?#iefix") format("embedded-opentype"),
@@ -270,6 +366,9 @@ display: none;}
 .icon-facebook:before {
   content: "\64";
 }
+*/
+
+
 
 /* icons end */
 
@@ -391,9 +490,8 @@ body{
 
 
 /*Styling Social Media Icons */
-.icon-instagram,
-.icon-facebook,
-.icon-mail{
+.icon-email,
+.icon-linkedin-alt{
     font-size: 50px;
     padding: 10px;
 }
