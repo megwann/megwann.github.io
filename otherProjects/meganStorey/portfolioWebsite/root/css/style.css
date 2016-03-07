@@ -90,7 +90,7 @@ h1{
 
 font-family: 'trashhandregular';
 color: #EC008C;
-font-size: 120px; 
+font-size: 100px; 
 float: left;
 padding-bottom: 20px;
 border-bottom: 3px solid #939598;   
@@ -173,7 +173,7 @@ h2{
     
     font-family:'claire_handlight';
     color: #EC008C;
-    font-size: 40px;
+    font-size: 30px;
 }
 
 /*Styling all the H3 Tags */
@@ -200,6 +200,9 @@ font-family:'claire_handlight';
     
 }
 
+.port{
+text-align: center;
+}
 .pdf{
 
 font-family:'claire_handlight';
@@ -222,6 +225,7 @@ font-family:'claire_handlight';
     color: #939598;
     list-style-type: circle;
     padding: 10px;
+    
     
 }
 
@@ -536,6 +540,25 @@ div.desc {
     font-size: 32px; 
     color: #939598;
 }
+    
+    
+    
+.port {
+
+    
+    
+    font-family:'claire_handlight';
+    font-size: 25px; 
+    color: #EC008C;
+    margin-top: 10px;
+    text-align: center;
+
+}
+    
+
+
+
+}    
 
     /*Styling Image Gallery End */
    
