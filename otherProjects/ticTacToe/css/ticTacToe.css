@@ -1,16 +1,18 @@
 body {
-background-color: #B19CD9;
+
+
+
 }
 
 h1 {
 
-color: white;  
+color: grey;  
     text-align: center;
     font-size: 24pt;
 }
 
 h2{
-    color: white;  
+    color: grey;  
     text-align: center;
     font-size: 16pt;
 }
@@ -46,15 +48,15 @@ h2{
   color: lightgreen;
 }
 .allBorders {
-  border: 3px white solid;
+  border: 3px grey solid;
 }
 .borderBottom {
-  border-bottom: 3px white solid;
+  border-bottom: 3px grey solid;
 }
 .borderTop {
-  border-top: 3px white solid;
+  border-top: 3px grey solid;
 }
 .borderLeftAndRight {
-  border-left: 3px white solid;
-  border-right: 3px white solid;
+  border-left: 3px grey solid;
+  border-right: 3px grey solid;
 }

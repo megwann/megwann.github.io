@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Take An Order Bootstrap</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<script src="js/takeAnOrder.js"></script>
+
+    
+   <style>
+    
+       
+    h1{
+    
+    font-size: 100px;
+    text-align: center;
+    
+    }   
+       
+body{
+
+padding-right: 100px;
+padding-left: 100px;
+background-image: url(images/pizza1.png);
+background-repeat: repeat;
+
+}
+#wrapper {
+}
+       
+div{
+
+background: white;
+
+}    
+       
+}     
+       
+       
+    </style> 
+    
+    
+    
+</head>
+<body>
+
+    
+
+    
+    <div id="wrapper">
+        
+        <h1> Megan's Pizzaria </h1>
+      <div class="panel panel-warning">
+      <div class="panel-heading">Order Online!</div>
+      <div class="panel-body">   
+        
+        
+  
+    <input id="mySingleLineText" type="text" value="Full Name">
+    <br>
+    <br>
+    <textarea id="myTextarea" rows="2" cols="50">Enter Address</textarea>
+    <br>
+    
+    <textarea id="myTextarea" rows="4" cols="50">Delivery Instructions/Special Requests</textarea>   
+        
+    <br>
+    <br>
+        
+        
+        
+    <h3> Topping Options</h3>    
+    <select id="mySelect">
+      <option value="value1">Mushrooms</option>
+      <option value="value2" selected>Red Pepper</option>
+      <option value="value3">Olives</option>
+    </select>
+    <br>
+
+    <div id="mySelectMessage"></div>
+
+    
+        <h3> Cheese Options</h3>
+    <input type="radio" name="gender" value="Cheese" checked> Cheese 
+    <br>
+    <input type="radio" name="gender" value="No Cheese"> 3 Cheese Mix
+    <br>
+    <input type="radio" name="gender" value="other"> No Cheese 
+
+    <br>
+    <h3> Delivery Options</h3>
+    <input type="checkbox" name="vehicle" value="Delivery" checked>Delivery 
+    <br>
+    <input type="checkbox" name="vehicle" value="Pick Up">Pick Up 
+  
+    <br>
+    <h3> Place Your Order!</h3>  
+    <button id="myButton" type="button" class="btn btn-warning">Order Now!</button>
+    <br>
+    <br>
+    <div id="log">LOG</div>
+  </div>
+
+    </div>
+   
+    </div>
+    
+   <div class="panel panel-warning">
+      <div class="panel-heading"> &copy;Megan Storey</div>
+      <div class="panel-body"><a href="http://www.freepik.com">Background Image Designed by Freepik</a></div>
+    </div>
+    
+    </body>
+</html>
