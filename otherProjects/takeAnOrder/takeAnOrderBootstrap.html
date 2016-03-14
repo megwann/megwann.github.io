@@ -5,18 +5,19 @@
 <title>Take An Order Bootstrap</title>
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css">
+<link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 <script src="js/takeAnOrder.js"></script>
 
     
-   <style>
-    
-       
+   <style>   
+   
     h1{
     
     font-size: 100px;
     text-align: center;
+    font-family: 'Pacifico', cursive;
     
     }   
        
@@ -31,10 +32,17 @@ background-repeat: repeat;
 #wrapper{
 
 background: white;
+
+
 }
          
-   
-       
+ .megan{
+ 
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+ 
+ }    
        
     </style> 
     
@@ -43,27 +51,26 @@ background: white;
 </head>
 <body>
 
-    <nav class="navbar navbar-inverse">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <a class="navbar-brand" href="http://megwann.github.io//index.html">Megan Storey</a>
-    </div>
-    <ul class="nav navbar-nav">
-      <li><a href="http://megwann.github.io//index.html">Home</a></li>
+    <!-- +++++++++++++++++++++++++ NAV BAR ++++++++++++++++++++++++-->
+        <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+        <div class="navbar-header">
+        <a class="navbar-brand" href="http://megwann.github.io//index.html">Megan Storey</a>
+        </div>
+        
+        <ul class="nav navbar-nav">
+        <li><a href="http://megwann.github.io//index.html">Home</a></li>
 
-       <li><a href="http://megwann.github.io/otherProjects/codeAcademy/index.html">Code Academy</a></li>
+        <li><a href="http://megwann.github.io/otherProjects/codeAcademy/index.html">Code Academy</a></li>
 
         <li><a href="http://megwann.github.io/otherProjects/ticTacToe/index.html">Tic Tac Toe</a></li>
         
-            <li class="dropdown">
+        <li class="dropdown">
         <a class="dropdown-toggle" data-toggle="dropdown" href="#">JS Questions
         <span class="caret"></span></a>
         <ul class="dropdown-menu">
-        
-            <li><a href="http://megwann.github.io/otherProjects/jsQuestions/index.html"> Week 3 Programming Questions</a></li>     
-            
-             <li><a href="http://megwann.github.io/otherProjects/jsQuestions/week5Questions.html"> Week 5 Questions </a></li>  
-            
+        <li><a href="http://megwann.github.io/otherProjects/jsQuestions/index.html"> Week 3 Programming Questions</a></li>     
+        <li><a href="http://megwann.github.io/otherProjects/jsQuestions/week5Questions.html"> Week 5 Questions </a></li>    
         </ul>
         </li>
 
@@ -71,10 +78,8 @@ background: white;
         <a class="dropdown-toggle" data-toggle="dropdown" href="#">Twitter Bootstrap
         <span class="caret"></span></a>
         <ul class="dropdown-menu">
-            <li><a href="http://megwann.github.io/otherProjects/twitterBootstrap/index.html">Twitter Bootstrap</a></li>
-
-          <li><a href="http://megwann.github.io/otherProjects/twitterBootstrap/carousel.html">Carousel</a></li>
-
+        <li><a href="http://megwann.github.io/otherProjects/twitterBootstrap/index.html">Twitter Bootstrap</a></li>
+        <li><a href="http://megwann.github.io/otherProjects/twitterBootstrap/carousel.html">Carousel</a></li>
         </ul>
         </li>
         
@@ -82,42 +87,38 @@ background: white;
         <a class="dropdown-toggle" data-toggle="dropdown" href="#">Take An Order
         <span class="caret"></span></a>
         <ul class="dropdown-menu">
-            <li><a href="http://megwann.github.io/otherProjects/takeAnOrder/takeAnOrderRegular.html">Regular</a></li>
-
-            <li><a href="http://megwann.github.io/otherProjects/takeAnOrder/takeAnOrderBootstrap.html">Bootstrap</a></li>
-
+        <li><a href="http://megwann.github.io/otherProjects/takeAnOrder/takeAnOrderRegular.html">Regular</a></li>
+        <li><a href="http://megwann.github.io/otherProjects/takeAnOrder/takeAnOrderBootstrap.html">Bootstrap</a></li>
         </ul>
         </li>
-
 
     </ul>
   </div>
 </nav>
     
+    
+    <img src="images/Megan.png" class="megan"> 
 
     
+<div class="container">
+    <div class="row">
+    <!-- +++++++++++++++++OrderOnline!++++++++++-->
+    <div class="col-md-6">
     <div id="wrapper">
         
-        <h1> Megan's Pizzaria </h1>
+    
       <div class="panel panel-warning">
       <div class="panel-heading">Order Online!</div>
       <div class="panel-body">   
         
-        
-  
     <input id="mySingleLineText" type="text" value="Full Name">
     <br>
     <br>
     <textarea id="myTextarea" rows="2" cols="50">Enter Address</textarea>
     <br>
-    
-    <textarea id="myTextarea" rows="4" cols="50">Delivery Instructions/Special Requests</textarea>   
+    <textarea id="myTextarea" rows="4" cols="50">Delivery Instructions/Special Requests</textarea>    
         
-    <br>
-    <br>
-        
-        
-        
+           
     <h3> Topping Options</h3>    
     <select id="mySelect">
       <option value="value1">Mushrooms</option>
@@ -125,11 +126,9 @@ background: white;
       <option value="value3">Olives</option>
     </select>
     <br>
-
     <div id="mySelectMessage"></div>
 
-    
-        <h3> Cheese Options</h3>
+    <h3> Cheese Options</h3>
     <input type="radio" name="gender" value="Cheese" checked> Cheese 
     <br>
     <input type="radio" name="gender" value="No Cheese"> 3 Cheese Mix
@@ -147,17 +146,81 @@ background: white;
     <button id="myButton" type="button" class="btn btn-warning">Order Now!</button>
     <br>
     <br>
-    <div id="log">LOG</div>
-  </div>
-
+    <div id="log">LOG</div>  
+          
+        </div>
     </div>
-   
-    </div>
+   </div>
+        </div>
     
+    <!-- ++++++++++++++++LEFT SIDE++++++++++++++++++++++++-->
+    <div class="col-md-6">
+        
+  <div class="panel panel-warning">
+      <div class="panel-heading"> Megan's Favourites!</div>
+      <div class="panel-body">   
+                
+          
+          
+  
+          <div class="bs-example">
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <!-- Carousel indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+        
+        </ol>   
+        <!-- Wrapper for carousel items -->
+        <div class="carousel-inner">
+            <div class="item active">
+                <img src="images/Pizzaa1.png" alt="First Slide">
+            </div>
+            <div class="item">
+                <img src="images/pizza2.png" alt="Second Slide">
+            </div>
+            <div class="item">
+                <img src="images/pizza3.png" alt="Third Slide">
+            </div>
+            
+        </div>
+        
+        <!-- Carousel controls -->
+        <a class="carousel-control left" href="#myCarousel" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+        </a>
+        <a class="carousel-control right" href="#myCarousel" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+        </a>
+    </div>
+</div>
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+       </div>
+   </div>      
+          
+          
+           
+ </div>
+</div>
+        
+</div>
+          <!-- +++++++++++++++ FOOTER ++++++++++++++++++++ -->
+          
    <div class="panel panel-warning">
-      <div class="panel-heading"> &copy;Megan Storey</div>
+      <div class="panel-heading"> &copy; Megan Storey</div>
       <div class="panel-body"><a href="http://www.freepik.com">Background Image Designed by Freepik</a></div>
     </div>
+    
     
     </body>
 </html>
