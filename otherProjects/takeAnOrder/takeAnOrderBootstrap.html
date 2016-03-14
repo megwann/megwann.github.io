@@ -13,14 +13,25 @@
     
    <style>   
    
-    h1{
+    h1, h3, h2{
     
-    font-size: 100px;
-    text-align: center;
+    font-size: 20px;
+    
     font-family: 'Pacifico', cursive;
     
     }   
        
+    h1{
+    font-size: 36px;
+    text-align: center;}   
+      
+       h2{
+       font-size: 25px;}
+ 
+.panel-heading{
+font-family: 'Pacifico', cursive;
+font-size: 20px;
+text-align: center;}       
 body{
 
 padding-right: 100px;
@@ -108,45 +119,59 @@ background: white;
         
     
       <div class="panel panel-warning">
-      <div class="panel-heading">Order Online!</div>
+      <div class="panel-heading">Order Online</div>
       <div class="panel-body">   
         
     <input id="mySingleLineText" type="text" value="Full Name">
     <br>
     <br>
-    <textarea id="myTextarea" rows="2" cols="50">Enter Address</textarea>
+    <textarea id="myTextarea" rows="2" cols="50">Address</textarea>
     <br>
     <textarea id="myTextarea" rows="4" cols="50">Delivery Instructions/Special Requests</textarea>    
         
            
-    <h3> Topping Options</h3>    
+    <h3> Delivery Options</h3>    
     <select id="mySelect">
-      <option value="value1">Mushrooms</option>
-      <option value="value2" selected>Red Pepper</option>
-      <option value="value3">Olives</option>
+      <option value="We will be at your door in 30 mins or less!"selected>Delivery</option>
+      <option value="We will see you in Store!"> Pick Up In Store</option>
+     
     </select>
     <br>
     <div id="mySelectMessage"></div>
 
+    <h3> Size Options</h3>
+    <input type="radio" name="gender" value="Cheese" checked> Small $5.99
+    <br>
+    <input type="radio" name="gender" value="No Cheese"> Medium $9.99
+    <br>
+    <input type="radio" name="gender" value="other"> Large $14.99     
+    <br>
+    <input type="radio" name="gender" value="other"> XLarge $19.99     
+          
+          
+    <br>
+    <h3> Topping Options</h3>
+    <input type="checkbox" name="vehicle" value="Pepperoni" checked> Pepperoni 
+    <br>
+    <input type="checkbox" name="vehicle" value="Mushrooms"> Mushrooms 
+    <br>
+    <input type="checkbox" name="vehicle" value="" > Olives
+    <br>
+    <input type="checkbox" name="vehicle" value="">  Onions
+    <br>
+    <input type="checkbox" name="vehicle" value="">  Bacon
+    <br>
+    <input type="checkbox" name="vehicle" value="">  Green Peppers
+    <br>
+    <input type="checkbox" name="vehicle" value="">  Pineapple     
+    <br>
+          
     <h3> Cheese Options</h3>
-    <input type="radio" name="gender" value="Cheese" checked> Cheese 
+    <input type="checkbox" name="vehicle" value="Pepperoni" checked> Cheese
     <br>
-    <input type="radio" name="gender" value="No Cheese"> 3 Cheese Mix
+    <input type="checkbox" name="vehicle" value="Mushrooms"> 3 Cheese Blend
     <br>
-    <input type="radio" name="gender" value="other"> No Cheese 
-
-    <br>
-    <h3> Delivery Options</h3>
-    <input type="checkbox" name="vehicle" value="Delivery" checked>Delivery 
-    <br>
-    <input type="checkbox" name="vehicle" value="Pick Up">Pick Up 
-  
-    <br>
-    <h3> Place Your Order!</h3>  
-    <button id="myButton" type="button" class="btn btn-warning">Order Now!</button>
-    <br>
-    <br>
-    <div id="log">LOG</div>  
+    <input type="checkbox" name="vehicle" value="" > No Cheese 
           
         </div>
     </div>
@@ -157,7 +182,7 @@ background: white;
     <div class="col-md-6">
         
   <div class="panel panel-warning">
-      <div class="panel-heading"> Megan's Favourites!</div>
+      <div class="panel-heading"> Megan's Favourites</div>
       <div class="panel-body">   
                 
           
@@ -199,8 +224,10 @@ background: white;
           
           
           
-          
-          
+     <h2> Place Your Order!</h2>  
+    <button id="myButton" type="button" class="btn btn-warning">Order Now!</button>
+    <br>
+    <h1>Thank You for Choosing Megans Pizzaria! </h1>         
           
           
           
@@ -211,14 +238,20 @@ background: white;
           
            
  </div>
-</div>
+   
         
 </div>
+        
+</div>  
+    
           <!-- +++++++++++++++ FOOTER ++++++++++++++++++++ -->
           
    <div class="panel panel-warning">
       <div class="panel-heading"> &copy; Megan Storey</div>
-      <div class="panel-body"><a href="http://www.freepik.com">Background Image Designed by Freepik</a></div>
+      <div class="panel-body">
+          
+          <div id="log">LOG</div> 
+          <a href="http://www.freepik.com">Background Image Designed by Freepik</a></div>
     </div>
     
     

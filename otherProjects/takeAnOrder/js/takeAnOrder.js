@@ -34,7 +34,7 @@ $(document).ready(function() {
 
     var val = $(this).val();
     $("#log").append("<br>select change");
-    $("#mySelectMessage").html(val + " is a nice selection!");
+    $("#mySelectMessage").html(val + "");
 
   });
 
