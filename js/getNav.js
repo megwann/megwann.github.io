@@ -1,6 +1,6 @@
 $.get("http://megwann.github.io/partials/nav.html", function (data){
 
-$(document).ready(funtion()(
+$(document).ready(function()(
 
 $(".container").prepend(data);
 
