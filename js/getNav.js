@@ -9,3 +9,11 @@ $(".container").fadeIn();
     
 })
  })
+
+
+$.get("http://megwann.github.io/partials/getFooter.html",function(foot){
+  $(document).ready(function(){
+    $(".container").append(foot);
+      $(".container").fadeIn();
+  })  
+})
