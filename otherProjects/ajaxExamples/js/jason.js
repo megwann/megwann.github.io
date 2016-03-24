@@ -6,15 +6,45 @@ $(document).ready(function(){
        
     var html="";   
        
-    $.each(data,funcation(index, item){
+    $.each(data,function(index, item){
            
-           html+='<div class="cold-md-4">'+ 
-                '<div class="jasonName"> '+item.name+' </div>+
-                '<div class="jasonGender"> '+item.gender+' </div>'+
-                '<div class="jasonJob">'+item.job+' </div>'+
-                '<img src="'+item.image+'"/>';
-          
-           html+='</div>';
+           html+='<div class="col-md-4">'+ 
+                  '<div class="panel panel-info">'+    //PANEL
+                '<div class="panel-heading"> '+item.name+' </div>'+ //PANEL
+               
+                //'<div class="jasonName"> '+item.name+' </div>'+
+                '<div class="jasonGender">'+'Gender: ' +item.gender+' </div>'+
+                '<div class="jasonJob">'+'Job: ' +item.job+' </div>'+
+                '<img class="jasonImage" src="'+item.image+'"/>';
+               // '<div class="commentsContainer">';
+               
+        
+                    $.each(item.comments,function(ind, i){
+                      
+                            html+= '<div class="panel-body">'+  //PANEL
+                                '<div class="fanName">'+'<span class="bold"> Username: </span>' +i.username+' </div>'+
+                                '<div class="fanComment">'+'Comment: '+i.comment+'</div>'+
+                               
+                                
+                                '<div class="renterStars">'+
+                        
+                                '</div>';
+                            
+                        var numStars = Number(i.stars);
+                        
+                        for(var i =1; i <= 5; i++){
+                            
+                            if(i <= numStars){
+                             html+='<img src="images/star.png">';
+                            }
+                            else{
+                             html+='<img src="images/blank.png">';
+                            }
+                        }
+                        html+='</div>';
+                        
+                    })
+           html+='</div>'+'</div>';
            
            })//each Jason
     
@@ -43,5 +73,13 @@ $(document).ready(function(){
               </div> 
               //end jason 
               
+    
+    
+    <div class="panel panel-info">
+      <div class="panel-heading"></div>
+      <div class="panel-body">   
+    
+    </div>
+    </div>
     
 */
