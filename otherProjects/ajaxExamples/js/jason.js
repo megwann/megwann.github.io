@@ -13,8 +13,8 @@ $(document).ready(function(){
                 '<div class="panel-heading"> '+item.name+' </div>'+ //PANEL
                
                 //'<div class="jasonName"> '+item.name+' </div>'+
-                '<div class="jasonGender">'+'Gender: ' +item.gender+' </div>'+
-                '<div class="jasonJob">'+'Job: ' +item.job+' </div>'+
+                '<div class="jasonGender">'+'<span class="bold">Gender: </span>' +item.gender+' </div>'+
+                '<div class="jasonJob">'+'<span class="bold">Job: </span>' +item.job+' </div>'+
                 '<img class="jasonImage" src="'+item.image+'"/>';
                // '<div class="commentsContainer">';
                
@@ -23,7 +23,7 @@ $(document).ready(function(){
                       
                             html+= '<div class="panel-body">'+  //PANEL
                                 '<div class="fanName">'+'<span class="bold"> Username: </span>' +i.username+' </div>'+
-                                '<div class="fanComment">'+'Comment: '+i.comment+'</div>'+
+                                '<div class="fanComment">'+'<span class="bold">Comment: </span>'+i.comment+'</div>'+
                                
                                 
                                 '<div class="renterStars">'+

@@ -101,9 +101,121 @@
             
         
         ]
+    },
+    
+    
+     { 
+    "name":"Jason Mraz",
+    "gender":"Male",
+    "job": "Singer",
+    "image":"images/jason4.jpg",
+        "comments": [
+        
+            {
+            
+            "username":"MrazJazz",
+              "stars":5,
+                "comment":"Amazing vocals"
+    
+            
+            },{
+            
+            "username":"LolaLa",
+              "stars":4,
+                "comment":"Wow I wish he made music still"
+            
+            },{
+            
+            "username":"BOO!",
+              "stars":1,
+                "comment":"THE WORST "
+            
+            }
+            
+        
+        ]
+        
+        
+    },
+
+
+     { 
+    "name":"Jason Bateman",
+    "gender":"Male",
+    "job": "Actor",
+    "image":"images/jason5.jpg",
+        "comments": [
+        
+            {
+            
+            "username":"NananaBateman",
+              "stars":5,
+                "comment":"He is so funny!"
+    
+            
+            },{
+            
+            "username":"Blahhh",
+              "stars":3,
+                "comment":"He has a lot of hair"
+            
+            },{
+            
+            "username":"Bateloser",
+              "stars":1,
+                "comment":"Don't like the guy"
+            
+            }
+            
+        
+        ]
+        
+        
+    },
+    
+         { 
+    "name":"Jason Segel",
+    "gender":"Male",
+    "job": "Actor",
+    "image":"images/jason6.jpg",
+        "comments": [
+        
+            {
+            
+            "username":"ILoveThisMan",
+              "stars":5,
+                "comment":"Hilarious in I Love You Man!"
+    
+            
+            },{
+            
+            "username":"Marshal",
+              "stars":3,
+                "comment":"Miss How I met your mother..."
+            
+            },{
+            
+            "username":"Tallioo",
+              "stars":2,
+                "comment":"Guy is like super tall"
+            
+            }
+            
+        
+        ]
+        
+        
     }
 
 
+    
+    
+    
+    
+    
+    
+    
+    
 
 ]
 
