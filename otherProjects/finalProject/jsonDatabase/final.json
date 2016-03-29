@@ -1,0 +1,208 @@
+[
+    
+    { 
+    "name":"Jason Derulo",
+    "gender":"Male",
+    "job": "Singer",
+    "image":"images/jason1.jpg",
+        "comments": [
+        
+            {
+            
+            "username":"JasonLover29",
+              "stars":5,
+                "comment":"My Fav Singer!!!!!"
+    
+            
+            },{
+            
+            "username":"AlukaHeights",
+              "stars":5,
+                "comment":"He is so pretty!!!"
+            
+            },{
+            
+            "username":"2cool4school",
+              "stars":2,
+                "comment":"He is okay, not great. "
+            
+            }
+            
+        
+        ]
+        
+        
+    },
+    
+    {
+
+    "name":"Jason Statham",
+    "gender":"Male",
+    "job": "Actor",
+    "image":"images/jason2.jpg",
+        
+             "comments": [
+        
+            {
+            
+            "username":"ActionMovieBuff",
+              "stars":5,
+                "comment":"Loved him in Fast and Furious!"
+    
+            
+            },{
+            
+            "username":"LalaGirl",
+              "stars":4,
+                "comment":"British Guys!!!!"
+            
+            },{
+            
+            "username":"YoYoCat",
+              "stars":1,
+                "comment":"He is scary man...."
+            
+            }
+            
+        
+        ]
+
+    },
+    
+    
+    {   
+    "name":"Jason Sudeikis",
+    "gender":"Male",
+    "job": "Actor",
+    "image":"images/jason3.jpg",
+        
+             "comments": [
+        
+            {
+            
+            "username":"SNLover",
+              "stars":5,
+                "comment":"He is so funny, wish he was still on SNL"
+    
+            
+            },{
+            
+            "username":"WeDaCoolest",
+              "stars":4,
+                "comment":"We the Millers was so funny -- Love him in that!"
+            
+            },{
+            
+            "username":"wateva",
+              "stars":2,
+                "comment":"Not cool, not funny."
+            
+            }
+            
+        
+        ]
+    },
+    
+    
+     { 
+    "name":"Jason Mraz",
+    "gender":"Male",
+    "job": "Singer",
+    "image":"images/jason4.jpg",
+        "comments": [
+        
+            {
+            
+            "username":"MrazJazz",
+              "stars":5,
+                "comment":"Amazing vocals"
+    
+            
+            },{
+            
+            "username":"LolaLa",
+              "stars":4,
+                "comment":"Wow I wish he made music still"
+            
+            },{
+            
+            "username":"BOO!",
+              "stars":1,
+                "comment":"THE WORST "
+            
+            }
+            
+        
+        ]
+        
+        
+    },
+
+
+     { 
+    "name":"Jason Bateman",
+    "gender":"Male",
+    "job": "Actor",
+    "image":"images/jason5.jpg",
+        "comments": [
+        
+            {
+            
+            "username":"NananaBateman",
+              "stars":5,
+                "comment":"He is so funny!"
+    
+            
+            },{
+            
+            "username":"Blahhh",
+              "stars":3,
+                "comment":"He has a lot of hair"
+            
+            },{
+            
+            "username":"Bateloser",
+              "stars":1,
+                "comment":"Don't like the guy"
+            
+            }
+            
+        
+        ]
+        
+        
+    },
+    
+         { 
+    "name":"Jason Segel",
+    "gender":"Male",
+    "job": "Actor",
+    "image":"images/jason6.jpg",
+        "comments": [
+        
+            {
+            
+            "username":"ILoveThisMan",
+              "stars":5,
+                "comment":"Hilarious in I Love You Man!"
+    
+            
+            },{
+            
+            "username":"Marshal",
+              "stars":3,
+                "comment":"Miss How I met your mother..."
+            
+            },{
+            
+            "username":"Tallioo",
+              "stars":2,
+                "comment":"Guy is like super tall"
+            
+            }
+            
+        
+        ]
+        
+        
+    }
