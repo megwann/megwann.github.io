@@ -30,10 +30,7 @@ function getPartial(partial) {
                 
         //ajax get view.html
         
-        
-        
-        
-        
+         $.get("partials/home.html", function (data){
          $.getJSON("jsonDatabase/final.json",function(data){ 
     
     console.dir(data);
@@ -88,6 +85,7 @@ function getPartial(partial) {
     
          } 
          
+               
     }else if (partial =="orderPage"){
     
           //ajax get order.html
