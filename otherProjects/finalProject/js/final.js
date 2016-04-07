@@ -15,22 +15,32 @@ $(document).ready(function(){
        
 function getPartial(partial) {
 
+console.log('hello' + partial) 
 
     if(partial == "homePage"){ 
         
-        //ajax get home.html
+        //ajax ++++++++++++++++++++ GET HOME PAGE ++++++++++++++++++++++++
     
      $.get("partials/home.html", function (data){
      
-     $("#pageContent").html(html);
+     $("#pageContent").html(data);
          $('.carousel').carousel()
      })   
         
+     
+       //ajax ++++++++++++++++++++ END HOME PAGE ++++++++++++++++++++++++
+     
+     
+     
+     
+     
+       //ajax ++++++++++++++++++++ GET VIEW PAGE ++++++++++++++++++++++++
+     
     }else if (partial =="viewPage"){
                 
         //ajax get view.html
         
-         $.get("partials/home.html", function (data){
+    
          $.getJSON("jsonDatabase/final.json",function(data){ 
     
     console.dir(data);
@@ -41,11 +51,11 @@ function getPartial(partial) {
            
            html+='<div class="col-md-4">'+ 
                   '<div class="panel panel-info">'+    //PANEL
-                '<div class="panel-heading"> '+item.name+' </div>'+ //PANEL
+                '<div class="panel-heading"> '+item.title+' </div>'+ //PANEL
                
                 //'<div class="jasonName"> '+item.name+' </div>'+
-                '<div class="jasonGender">'+'<span class="bold">Gender: </span>' +item.gender+' </div>'+
-                '<div class="jasonJob">'+'<span class="bold">Job: </span>' +item.job+' </div>'+
+                '<div class="jasonGender">'+'<span class="bold">Gender: </span>' +item.director+' </div>'+
+                '<div class="jasonJob">'+'<span class="bold">Job: </span>' +item.year+' </div>'+
                 '<img class="jasonImage" src="'+item.image+'"/>';
                // '<div class="commentsContainer">';
                
@@ -79,13 +89,20 @@ function getPartial(partial) {
            
            })//each Jason
     
-    $("#jasonData").append(html);
+    $("#pageContent").html(html);
     
 })
     
-         } 
-         
+     
+
+        //ajax ++++++++++++++++++++ END VIEW PAGE ++++++++++++++++++++++++    
                
+               
+               
+               
+               
+               
+        //ajax ++++++++++++++++++++ BEGIN ORDER PAGE ++++++++++++++++++++++++            
     }else if (partial =="orderPage"){
     
           //ajax get order.html
@@ -174,7 +191,7 @@ function getPartial(partial) {
         
     }
       
-        
+         //ajax ++++++++++++++++++++ END ORDER PAGE ++++++++++++++++++++++++    
 
 }       
        // begin program 

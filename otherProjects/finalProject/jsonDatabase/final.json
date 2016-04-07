@@ -1,11 +1,12 @@
 [
     
     { 
-    "name":"Jason Derulo",
-    "gender":"Male",
-    "job": "Singer",
-    "image":"images/jason1.jpg",
-        "comments": [
+    "title":"Harry Potter and the Sorcerer's Stone",
+    "director":"Chris Columbus",
+    "year": "2001",
+    "image":"images/hp1.jpg",
+        
+        "ratings": [
         
             {
             
@@ -206,3 +207,17 @@
         
         
     }
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+]
+
+ 

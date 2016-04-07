@@ -1,4 +1,59 @@
+/* +++++++++++++++++ NAV BAR ++++++++++++++++++*/
+
+
 .nav-pills>li.active>a, .nav-pills>li.active>a:focus, .nav-pills>li.active>a:hover {
-    color: #fff;
-    background-color: pink;
+    color: black;
+    background-color: yellow;
+    
 }
+
+
+
+/* +++++++++++++++++ HOME PAGE ++++++++++++++++++*/
+
+h1{ 
+
+font-family: 'harry_pregular';
+font-size: 200px;  
+    text-align: center;
+    color: white;
+    
+}
+
+h2{
+
+ color: white; 
+        text-align: center;
+    font-style: italic;
+    font-size: 20px;
+    
+}
+
+body{
+
+    background-color: black;
+
+}
+
+.carousel-inner > .item > img {
+    margin: 0 auto;
+}
+
+
+/* +++++++++++++++++ Movie Rating PAFE ++++++++++++++++++*/
+
+/* +++++++++++++++++  HOUSE PAFE ++++++++++++++++++*/
+
+/* +++++++++++++++++  ORDER PAGE  ++++++++++++++++++*/
+
+
+
+
+
+
+
+
+
+
+
+
