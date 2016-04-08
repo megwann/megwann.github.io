@@ -1,137 +1,131 @@
+<div class="container">
+      
+      <div class="page-header">
+  <h1>Order a Movie</h1>
+</div>
 
-    <div class="row">
-        
-        <img src="images/Megan.png" class="megan"> 
-    <!-- +++++++++++++++++OrderOnline!++++++++++-->
-    <div class="col-md-6">
-    <div id="wrapper">
-        
-    <h1> Harry Potter </h1>
-      <div class="panel panel-warning">
-      <div class="panel-heading">Order Online</div>
-      <div class="panel-body">   
-        
-    <input id="mySingleLineText" type="text" value="Full Name">
-    <br>
-    <br>
-    <textarea id="myTextarea" rows="2" cols="50">Address</textarea>
-    <br>
-    <textarea id="myTextarea" rows="4" cols="50">Delivery Instructions/Special Requests</textarea>    
-        
-           
-    <h3> Delivery Options</h3>    
-    <select id="mySelect">
-      <option value="We will be at your door in 30 mins or less!"selected>Delivery</option>
-      <option value="We will see you in Store!"> Pick Up In Store</option>
-     
+<div class="col-xs-12 col-md-3"></div>
+<div id="data" class="col-xs-12 col-md-6">
+
+  <div class="col-xs-12 col-md-12">
+    <label class="control-label">
+      Select a Movie 
+    </label>
+    <select id="catSelect" class="form-control">
+      <option value="select"> </option>
+      <option value="hp1">Harry Potter and the Sorcerer's Stone ($12.99)</option>
+      <option value="hp2">Harry Potter and the Chamber of Secrets ($12.99)</option>
+      <option value="hp3">Harry Potter and the Prisoner of Azkaban ($12.99)</option>
+      <option value="hp4">Harry Potter and the Goblet of Fire ($12.99)</option>
+      <option value="hp5">Harry Potter and the Order of the Phoenix ($12.99)</option>
+      <option value="hp6">Harry Potter and the Half-Blood Prince ($12.99)</option>
+      <option value="hp7">Harry Potter and the Deathly Hallows: Part 1 ($12.99)</option>
+      <option value="hp8">Harry Potter and the Deathly Hallows: Part 2 ($12.99)</option>
+    <option value="hpAll">Harry Potter Box Set: All 8 Movies ($49.99)</option>
+
     </select>
-    <br>
-    <div id="mySelectMessage"></div>
+  </div>
 
-    <h3> Size Options</h3>
-    <input type="radio" name="gender" value="Cheese" checked> Small $5.99
-    <br>
-    <input type="radio" name="gender" value="No Cheese"> Medium $9.99
-    <br>
-    <input type="radio" name="gender" value="other"> Large $14.99     
-    <br>
-    <input type="radio" name="gender" value="other"> XLarge $19.99     
-          
-          
-    <br>
-    <h3> Topping Options</h3>
-    <input type="checkbox" name="vehicle" value="Pepperoni" checked> Pepperoni 
-    <br>
-    <input type="checkbox" name="vehicle" value="Mushrooms"> Mushrooms 
-    <br>
-    <input type="checkbox" name="vehicle" value="" > Olives
-    <br>
-    <input type="checkbox" name="vehicle" value="">  Onions
-    <br>
-    <input type="checkbox" name="vehicle" value="">  Bacon
-    <br>
-    <input type="checkbox" name="vehicle" value="">  Green Peppers
-    <br>
-    <input type="checkbox" name="vehicle" value="">  Pineapple     
-    <br>
-          
-    <h3> Cheese Options</h3>
-    <input type="checkbox" name="vehicle" value="Pepperoni" checked> Cheese
-    <br>
-    <input type="checkbox" name="vehicle" value="Mushrooms"> 3 Cheese Blend
-    <br>
-    <input type="checkbox" name="vehicle" value="" > No Cheese 
-          
-        </div>
-    </div>
-   </div>
-        </div>
-    
-    <!-- ++++++++++++++++LEFT SIDE++++++++++++++++++++++++-->
-    <div class="col-md-6">
-        
-  <div class="panel panel-warning">
-      <div class="panel-heading"> Megan's Favourites</div>
-      <div class="panel-body">   
-                
-          
-          
   
-          <div class="bs-example">
-    <div id="myCarousel" class="carousel slide" data-ride="carousel">
-        <!-- Carousel indicators -->
-        <ol class="carousel-indicators">
-            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-            <li data-target="#myCarousel" data-slide-to="1"></li>
-            <li data-target="#myCarousel" data-slide-to="2"></li>
-        
-        </ol>   
-        <!-- Wrapper for carousel items -->
-        <div class="carousel-inner">
-            <div class="item active">
-                <img src="images/Pizzaa1.png" alt="First Slide">
-            </div>
-            <div class="item">
-                <img src="images/pizza2.png" alt="Second Slide">
-            </div>
-            <div class="item">
-                <img src="images/pizza3.png" alt="Third Slide">
-            </div>
-            
-        </div>
-        
-        <!-- Carousel controls -->
-        <a class="carousel-control left" href="#myCarousel" data-slide="prev">
-            <span class="glyphicon glyphicon-chevron-left"></span>
-        </a>
-        <a class="carousel-control right" href="#myCarousel" data-slide="next">
-            <span class="glyphicon glyphicon-chevron-right"></span>
-        </a>
-    </div>
-</div>
-          
-          
-          
-          
-     <h2> Place Your Order!</h2>  
-    <button id="myButton" type="button" class="btn btn-warning">Order Now!</button>
-    <br>
-    <h1>Thank You for Choosing Megans Pizzaria! </h1>         
-          
-          
-          
-          
-       </div>
-   </div>      
-          
-          
-           
- </div>
-   
-        
-</div>
-        
 
+  <div class="col-xs-12 col-md-12">
+    <label class="control-label">
+        Name on Credit Card
+    </label>
+    <input type="text" placeholder="Harry Potter" id="name" class="form-control">
+  </div>
+
+  <div class="col-xs-12 col-md-8">
+    <label class="control-label">
+      Card Number
+    </label>
+    <input id="cardNumber" type="text" maxlength="14" placeholder="7777-xxxx-xxxx-xxxx" class="form-control input-md">
+  </div>
+
+  <div class="col-xs-12 col-md-4">
+    <label class="control-label">
+      Card CVV
+    </label>
+    <input type="text" id="securityCode" class="form-control" maxlength="3" title="Three digits at back of your card" placeholder="123">
+  </div>
+
+  <div class="col-xs-12  col-md-6">
+    <label class="control-label">
+      Card Expiry Month
+    </label>
+    <select id="expirymonth" name="expirymonth" class="form-control">
+      <option value="01">January</option>
+      <option value="02">February</option>
+      <option value="03">March</option>
+      <option value="04">April</option>
+      <option value="05">May</option>
+      <option value="06">June</option>
+      <option value="07">July</option>
+      <option value="08">August</option>
+      <option value="09">September</option>
+      <option value="10">October</option>
+      <option value="11">November</option>
+      <option value="12">December</option>
+    </select>
+  </div>
+
+  <div class="col-xs-12 col-md-6">
+    <label class="control-label">
+      Card Expiry Year
+    </label>
+    <input id="expiryYear" type="text" placeholder="2014" class="form-control input-md">
+  </div>
+
+  <div class="col-xs-12 col-md-6">
+    <label class="control-label">
+      Address
+    </label>
+    <input id="address1" type="text" placeholder="4 Privet Drive" class="form-control">
+  </div>
+
+  <div class="col-xs-12 col-md-6">
+    <label class="control-label">
+      ZIP/Postal Code
+    </label>
+    <input type="text" id="zip" placeholder="H7P 7H7" class="form-control">
+  </div>
+
+  <div class="col-sm-6 col-xs-6 col-md-6">
+    <label class="control-label">
+      State/Province
+    </label>
+    <input type="text" id="state" placeholder="Surrey" class="form-control">
+  </div>
+
+   <div class="col-sm-6 col-xs-6 col-md-6">
+    <label class="control-label">
+      Country
+    </label>
+    <select id="catSelect" class="form-control">
+         <option value="UK">UK</option>
+      <option value="canada">Canada</option>
+      <option value="usa">USA</option>
+        
+    </select>
+  </div>
+  <div class="col-md-10">
+    <button id="submitButton" class="btn btn-info">
+   
+        Buy Now!
+    </button>
+  </div>
+<div id='successMsg' class='col-md-12 text-success'></div>
+</div>
+<div class="col-xs-12 col-md-3"></div>
+
+
+
+</div>
+
+
+
+
+  <link rel="stylesheet" href="css/style.css">
     
-    
+
 

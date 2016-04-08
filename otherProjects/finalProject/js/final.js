@@ -50,7 +50,7 @@ console.log('hello' + partial)
     $.each(data,function(index, item){
            
            html+='<div class="col-md-4">'+ 
-                  '<div class="panel panel-info">'+    //PANEL
+                  '<div class="panel panel-warning">'+    //PANEL
                 '<div class="panel-heading"> '+item.title+' </div>'+ //PANEL
                
                 //'<div class="jasonName"> '+item.name+' </div>'+
@@ -112,7 +112,10 @@ console.log('hello' + partial)
                
                
                
-        //ajax ++++++++++++++++++++ BEGIN ORDER PAGE ++++++++++++++++++++++++            
+        //ajax ++++++++++++++++++++ BEGIN ORDER PAGE ++++++++++++++++++++++++   
+         
+         
+         
     }else if (partial =="orderPage"){
     
           //ajax get order.html
