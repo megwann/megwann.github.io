@@ -11,7 +11,7 @@ $(document).ready(function(){
     var page =$(this).attr("id");
        getPartial(page);
 
-   })     
+   })    
        
 function getPartial(partial) {
 
@@ -54,18 +54,28 @@ console.log('hello' + partial)
                 '<div class="panel-heading"> '+item.title+' </div>'+ //PANEL
                
                 //'<div class="jasonName"> '+item.name+' </div>'+
-                '<div class="jasonGender">'+'<span class="bold">Gender: </span>' +item.director+' </div>'+
-                '<div class="jasonJob">'+'<span class="bold">Job: </span>' +item.year+' </div>'+
-                '<img class="jasonImage" src="'+item.image+'"/>';
+                '<img class="harryImage" src="'+item.image+'"/>'+
+               
+                      '<div class="harryPrice">'+'<span class="bold">Price: </span>' +item.price+' </div>'+
+               
+               
+               '<div class="harryDirector">'+'<span class="bold">Director: </span>' +item.director+' </div>'+
+                '<div class="harryYear">'+'<span class="bold">Year: </span>' +item.year+' </div>'+
+            
+               '<div class="description">'+'<span class="bold">Description: </span>' +item.description+' </div>'
+           
+           
+           
+                ;
                // '<div class="commentsContainer">';
                
         
                     $.each(item.comments,function(ind, i){
                       
                             html+= '<div class="panel-body">'+  //PANEL
-                                '<div class="fanName">'+'<span class="bold"> Username: </span>' +i.username+' </div>'+
-                                '<div class="fanComment">'+'<span class="bold">Comment: </span>'+i.comment+'</div>'+
-                               
+                                '<div class="fanName">'+'<span class="bold"> </span>' +i.username+' </div>'+
+                                
+                    
                                 
                                 '<div class="renterStars">'+
                         
@@ -73,7 +83,7 @@ console.log('hello' + partial)
                             
                         var numStars = Number(i.stars);
                         
-                        for(var i =1; i <= 5; i++){
+                        for(var i =1; i <= 10; i++){
                             
                             if(i <= numStars){
                              html+='<img src="images/star.png">';
