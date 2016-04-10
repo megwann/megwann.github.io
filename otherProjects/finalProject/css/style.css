@@ -8,9 +8,10 @@ body{
 
 /* +++++++++++++++++ NAV BAR ++++++++++++++++++*/
 
-.nav navbar-nav{
-    
-font-family: 'harry_pregular';
+
+a{
+
+color: black;
 }
 
 

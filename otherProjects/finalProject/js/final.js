@@ -1,6 +1,6 @@
 $(document).ready(function(){
 
- //get all teh nav li, click event
+ //get all the nav li, click event
    $(".nav").find("li").on("click",function(){
 
        //remove all active class
@@ -40,10 +40,17 @@ console.log('hello' + partial)
                 
         //ajax get view.html
         
-    
-         $.getJSON("jsonDatabase/final.json",function(data){ 
-    
-    console.dir(data);
+//$.get("partials/view.html", function (data){  
+
+         $.getJSON("jsonDatabase/final.json", function(data){ 
+             
+ // $.get("partials/view.html", function (data){  })
+     
+// $("#pageContent").html(html);
+  //$("#pageContent").html(data);
+       
+            
+  //  console.dir(data);
        
     var html="";   
        
@@ -99,17 +106,20 @@ console.log('hello' + partial)
            
            })//each Jason
     
-    $("#pageContent").html(html);
+$("#pageContent").html(html);
     
 })
+    //})
     
-     
 
         //ajax ++++++++++++++++++++ END VIEW PAGE ++++++++++++++++++++++++    
                
                
                
                
+         
+         
+         
                
                
         //ajax ++++++++++++++++++++ BEGIN ORDER PAGE ++++++++++++++++++++++++   
@@ -202,7 +212,27 @@ console.log('hello' + partial)
          
      })   
         
-    }
+    }else if (partial =="harryPage"){
+    
+        
+        
+     $.get("partials/harry.html", function (data){
+     
+     $("#pageContent").html(data);
+         
+         
+         
+     })}
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
       
          //ajax ++++++++++++++++++++ END ORDER PAGE ++++++++++++++++++++++++    
 
