@@ -15,7 +15,7 @@ $(document).ready(function(){
        
 function getPartial(partial) {
 
-console.log('hello' + partial) 
+//console.log('hello' + partial) 
 
     if(partial == "homePage"){ 
         
@@ -133,6 +133,9 @@ $("#pageContent").html(html);
      $.get("partials/order.html", function (data){
      
      $("#pageContent").html(data);
+          $('.carousel').carousel()
+          
+             $('#startRentDate, #endRentDate').datepicker({});
 
        $("#myButton").on("mouseenter", function() {
       $("#log").append("<br>Button mouseenter");
