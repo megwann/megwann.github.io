@@ -144,7 +144,7 @@ $("#pageContent").html(html);
           //This mouseenter event make the Submit Button read other message on the button when the customer is hovering over it!             
                         $("#submitButton").on("mouseenter", function() {
       $("#log").append("<br>Button mouseenter");
-      $(this).text("Complete Order!");
+      $(this).text("Give It Here Maulfoy!");
     })
  
     .on("mouseleave", function() {
