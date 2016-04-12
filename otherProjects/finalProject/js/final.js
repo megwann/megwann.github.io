@@ -23,18 +23,21 @@ function getPartial(partial) {
     
      $.get("partials/home.html", function (data){
      
+         //retreiving the html page content 
      $("#pageContent").html(data);
+         
+         //adding in carousel 
          $('.carousel').carousel()
      })   
         
      
-       //ajax ++++++++++++++++++++ END HOME PAGE ++++++++++++++++++++++++
+       // ++++++++++++++++++++ END HOME PAGE ++++++++++++++++++++++++
      
      
      
      
      
-       //ajax ++++++++++++++++++++ GET VIEW PAGE ++++++++++++++++++++++++
+       // ++++++++++++++++++++ GET Trailer PAGE ++++++++++++++++++++++++
      
     }else if (partial =="harryPage"){
     
@@ -47,68 +50,63 @@ function getPartial(partial) {
          
          
      })
+     
+       // ++++++++++++++++++++ GET VIEW PAGE ++++++++++++++++++++++++
     
     }else if (partial =="viewPage"){
                 
-        //ajax get view.html
+        // get view.html
         
-//$.get("partials/view.html", function (data){  
+
 
          $.getJSON("jsonDatabase/final.json", function(data){ 
-             
- // $.get("partials/view.html", function (data){  })
-     
-// $("#pageContent").html(html);
-  //$("#pageContent").html(data);
-       
             
-  //  console.dir(data);
        
     var html="";   
        
     $.each(data,function(index, item){
            
            html+='<div id="hpview" class="col-md-4">'+ 
-                  '<div class="panel panel-warning">'+    //PANEL
-                '<div class="panel-heading"> '+item.title+' </div>'+ //PANEL
+                  '<div class="panel panel-warning">'+    //PANEL - Adding yellow panel around each movie listing 
+                '<div class="panel-heading"> '+item.title+' </div>'+ //PANEL - header of panel- movie title 
                
                 //'<div class="jasonName"> '+item.name+' </div>'+
-                '<img class="harryImage" src="'+item.image+'"/>'+
+                '<img class="harryImage" src="'+item.image+'"/>'+ //Adding in image 
                
-                      '<div class="harryPrice">'+'<span class="bold">Price: </span>' +item.price+' </div>'+
+                      '<div class="harryPrice">'+'<span class="bold">Price: </span>' +item.price+' </div>'+  //adding price 
                
                
-               '<div class="harryDirector">'+'<span class="bold">Director: </span>' +item.director+' </div>'+
-                '<div class="harryYear">'+'<span class="bold">Year: </span>' +item.year+' </div>'+
+               '<div class="harryDirector">'+'<span class="bold">Director: </span>' +item.director+' </div>'+ //adding director 
+                '<div class="harryYear">'+'<span class="bold">Year: </span>' +item.year+' </div>'+ //adding year of film 
             
-               '<div class="description">'+'<span class="bold">Description: </span>' +item.description+' </div>'
+               '<div class="description">'+'<span class="bold">Description: </span>' +item.description+' </div>' // adding description of film 
            
            
            
                 ;
-               // '<div class="commentsContainer">';
+               // COMMENTS 
                
         
                     $.each(item.comments,function(ind, i){
                       
                             html+= '<div class="panel-body">'+  //PANEL
-                                '<div class="fanName">'+'<span class="bold"> </span>' +i.username+' </div>'+
+                                '<div class="fanName">'+'<span class="bold"> </span>' +i.username+' </div>'+ //Name of Rater 
                                 
                     
                                 
-                                '<div class="renterStars">'+
+                                '<div class="renterStars">'+  //adding stars 
                         
                                 '</div>';
                             
                         var numStars = Number(i.stars);
                         
-                        for(var i =1; i <= 10; i++){
+                        for(var i =1; i <= 10; i++){  //out of 10 stars 
                             
                             if(i <= numStars){
-                             html+='<img src="images/star.png">';
+                             html+='<img src="images/star.png">';  //full star image 
                             }
                             else{
-                             html+='<img src="images/blank.png">';
+                             html+='<img src="images/blank.png">';  //empty star image 
                             }
                         }
                         html+='</div>';
@@ -124,7 +122,7 @@ $("#pageContent").html(html);
     //})
     
 
-        //ajax ++++++++++++++++++++ END VIEW PAGE ++++++++++++++++++++++++    
+        // ++++++++++++++++++++ END VIEW PAGE ++++++++++++++++++++++++    
                
                
                
@@ -134,16 +132,16 @@ $("#pageContent").html(html);
          
                
                
-        //ajax ++++++++++++++++++++ BEGIN ORDER PAGE ++++++++++++++++++++++++   
+        // ++++++++++++++++++++ BEGIN ORDER PAGE ++++++++++++++++++++++++   
          
          
          
-    }else if (partial == "orderPage") { //ajax get order.html
+    }else if (partial == "orderPage") { // get order.html
                 $.get("partials/order.html", function(data) {
 
                         $("#pageContent").html(data);
 
-                      
+          //This mouseenter event make the Submit Button read other message on the button when the customer is hovering over it!             
                         $("#submitButton").on("mouseenter", function() {
       $("#log").append("<br>Button mouseenter");
       $(this).text("Complete Order!");
@@ -154,6 +152,8 @@ $("#pageContent").html(html);
       $(this).text("Order Now!");
     });
                     
+                    
+              //IF the customer does not fill out all the imputs on order page, each box not filled out with turn red and not submit       
                         $("#submitButton").on("click", function() {
 
                                 //get all empty inputs and select
@@ -181,6 +181,7 @@ $("#pageContent").html(html);
 
         }
 
+    // Confirmation function, telling the customer thank you for there order and telling them what they ordered. Along with an image. 
         function sendConfirmation() {
             //make an object to record data for database;
             var order = {};
@@ -200,11 +201,11 @@ $("#pageContent").html(html);
 
 
       
-         //ajax ++++++++++++++++++++ END ORDER PAGE ++++++++++++++++++++++++    
+         // ++++++++++++++++++++ END ORDER PAGE ++++++++++++++++++++++++    
 
 }       
        // begin program 
     getPartial("homePage");   
-       
+       // end begin program 
   
 })
