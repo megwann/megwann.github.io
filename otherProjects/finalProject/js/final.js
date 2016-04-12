@@ -140,25 +140,29 @@ $("#pageContent").html(html);
                 $.get("partials/order.html", function(data) {
 
                         $("#pageContent").html(data);
+                    
+                    //adding in carousel 
+         $('.carousel').carousel()
 
           //This mouseenter event make the Submit Button read other message on the button when the customer is hovering over it!             
                         $("#submitButton").on("mouseenter", function() {
-      $("#log").append("<br>Button mouseenter");
+      $("#log").append("<br>Button mouseenter");  //logging message to screen 
       $(this).text("Give It Here Maulfoy!");
     })
  
     .on("mouseleave", function() {
-      $("#log").append("<br>Button mouseleave");
+      $("#log").append("<br>Button mouseleave"); //logging message to screen
       $(this).text("Order Now!");
     });
                     
                     
               //IF the customer does not fill out all the imputs on order page, each box not filled out with turn red and not submit       
                         $("#submitButton").on("click", function() {
-
+                        $("#log").append("<br>click function");
                                 //get all empty inputs and select
                                 //add error class to div container
                                 $("input, select").filter(function() {
+                                    $("#log").append("<br>error function"); //logging message to screen
                                     return !this.value;
                                 }).closest("div").addClass("has-error");
 
@@ -171,6 +175,7 @@ $("#pageContent").html(html);
 
                                 if (errors.length < 1) {
                                     //alert("no errors");
+                                    $("#log").append("<br>success function");  //logging message to screen
                                     sendConfirmation();
                                 }
 
@@ -195,7 +200,8 @@ $("#pageContent").html(html);
 
             alert("Sending to database " + JSON.stringify(order));
             $("#successMsg").html("You're A Wizard!<br/><br/>" + " Thank You for Ordering" + order.harrySelect +
-              "<img id='dh' src='images/DH.png'>");
+              "<img id='dh' src='images/DH.png'>")
+            $("#log").append("<br>Success Message");  //logging message to screen
 
 
 

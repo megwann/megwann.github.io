@@ -157,6 +157,17 @@ font-family: 'harry_pregular';
 
 }
 
+.logging {
+
+font-size: 30px;
+    font-family: 'harry_pregular';
+    color: black;
+    text-align: center;
+        text-shadow: 0 0 5px white, 0 0 10px white,
+             0 0 20px white, 0 0 30px white,
+             0 0 40px white;
+}
+
 
 /* +++++++++++++++++  MOBILE  ++++++++++++++++++*/
 
