@@ -1,5 +1,5 @@
 $(document).ready(function(){
-
+        
  //get all the nav li, click event
    $(".nav").find("li").on("click",function(){
 
@@ -144,6 +144,16 @@ $("#pageContent").html(html);
                         $("#pageContent").html(data);
 
                       
+                        $("#submitButton").on("mouseenter", function() {
+      $("#log").append("<br>Button mouseenter");
+      $(this).text("Complete Order!");
+    })
+ 
+    .on("mouseleave", function() {
+      $("#log").append("<br>Button mouseleave");
+      $(this).text("Order Now!");
+    });
+                    
                         $("#submitButton").on("click", function() {
 
                                 //get all empty inputs and select
