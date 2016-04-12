@@ -12,10 +12,20 @@ body{
 a{
 
 color: black;
+    text-decoration: none !important
+    
 }
 
+#git{
 
+background-color: purple;
+    
+}
 
+#github{
+
+    color: white;
+}
 
 /* +++++++++++++++++ HOME PAGE ++++++++++++++++++*/
 
@@ -54,7 +64,7 @@ h2{
 
 
 
-/* +++++++++++++++++ Movie Rating PAFE ++++++++++++++++++*/
+/* +++++++++++++++++ Movie Rating PAGE ++++++++++++++++++*/
 .harryImage{
     
       display: block;
@@ -65,7 +75,64 @@ h2{
 }
 
 
-/* +++++++++++++++++  HOUSE PAFE ++++++++++++++++++*/
+.bold{
+
+font-family: 'harry_pregular';
+font-size: 30px;  
+   
+    color: black;
+  
+           text-shadow: 0 0 5px white, 0 0 10px white,
+             0 0 20px white, 0 0 30px white,
+             0 0 40px white;
+
+}
+.harryPrice{
+
+padding-top: 20px;
+}
+
+.panel-heading{
+
+font-family: 'harry_pregular';
+font-size: 23px;  
+   text-align: center;
+    color: black;
+  
+           text-shadow: 0 0 5px white, 0 0 10px white,
+             0 0 20px white, 0 0 30px white,
+             0 0 40px white;
+
+}
+
+.harryPrice,
+.harryDirector,
+.harryYear,
+.description{
+
+padding-left: 20px;
+    padding-right: 20px;
+
+}
+
+#hpview{
+padding-top: 50px;
+
+
+}
+
+.fanName{
+
+font-family: 'harry_pregular';
+font-size: 30px;  
+   
+    color: black;
+  
+           text-shadow: 0 0 5px white, 0 0 10px white,
+             0 0 20px white, 0 0 30px white,
+             0 0 40px white;
+}
+
 
 /* +++++++++++++++++  ORDER PAGE  ++++++++++++++++++*/
 
@@ -91,5 +158,30 @@ font-family: 'harry_pregular';
 }
 
 
+/* +++++++++++++++++  MOBILE  ++++++++++++++++++*/
 
+
+@media screen and ( max-width: 770px ) {
+
+
+h1{
+
+    font-size: 150px;
+}
+    
+
+}
+
+
+@media screen and ( max-width: 600px ) {
+
+
+h1{
+
+    font-size: 80px;
+}
+
+
+
+}
 

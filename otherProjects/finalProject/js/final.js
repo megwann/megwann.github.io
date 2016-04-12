@@ -68,7 +68,7 @@ function getPartial(partial) {
        
     $.each(data,function(index, item){
            
-           html+='<div class="col-md-4">'+ 
+           html+='<div id="hpview" class="col-md-4">'+ 
                   '<div class="panel panel-warning">'+    //PANEL
                 '<div class="panel-heading"> '+item.title+' </div>'+ //PANEL
                
@@ -183,7 +183,7 @@ $("#pageContent").html(html);
             })
 
             alert("Sending to database " + JSON.stringify(order));
-            $("#successMsg").html("You're A Wizard!<br/><br/>" + " Thank You for Ordering" + 
+            $("#successMsg").html("You're A Wizard!<br/><br/>" + " Thank You for Ordering" + order.harrySelect +
               "<img id='dh' src='images/DH.png'>");
 
 
